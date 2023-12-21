@@ -46,7 +46,7 @@ const SearchBar = () => {
       <div>
         <ul>
           {searchResults.map((result) => (
-            <li key={result.id}>{result.title}<img src={result.images.downsized.url}></img></li>
+            <li key={result.id}>{result.title}<Image fill={true} alt="" src={result.images.embed_url}></Image></li>
           ))}
         </ul>
       </div>
